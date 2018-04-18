@@ -1,0 +1,151 @@
+body {
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  background-attachment: fixed;
+  background-position: center;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Roboto, helvetica, sans-serif;
+  color: white;
+
+  .main-container {
+    width: 1190px;
+    margin: 0 auto;
+
+    .profile-hero {
+      height: 500;
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+
+      .profile-card {
+        padding-top: 120px;
+
+        .profile_pic {
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+          border-radius: 50%;
+          box-shadow: 1px 1px  rgba(0,0,0,0.6);
+        	-moz-box-shadow: 1px 1px  rgba(0,0,0,0.6);
+        	-webkit-box-shadow: 1px 1px  rgba(0,0,0,0.6);
+        	-o-box-shadow: 1px 1px  rgba(0,0,0,0.6);
+        }
+
+        h1 {
+          font-size: 40px;
+        }
+
+        h2 {
+          color: grey;
+          font-size: 20px;
+          margin-bottom: 120px;
+        }
+      }
+    }
+    .mystyle {
+      height: 50px;
+      width: 100%;
+      -webkit-transition: height 0.5s; /* Safari */
+      transition: height 0.5s;
+      line-height: 50px;
+    }
+
+    nav {
+      top: 0;
+      position: -webkit-sticky;
+      position: sticky;
+      width: 100%;
+      height: 80px;
+      -webkit-transition: height 0.5s; /* Safari */
+      transition: height 0.5s;
+      margin: 0 auto;
+      background-color: #f7f7f7f2;
+      box-shadow: 0 2px #adadadcf;
+      line-height: 80px;
+
+      .navbar-items {
+        height: 80px;
+        width: 100%;
+
+        ul {
+          width: 470px;
+          margin: 0 auto;
+          -webkit-padding-start: 0;
+
+          li {
+            display: inline-block;
+            padding-left: 50px;
+            padding-right: 50px;
+
+            a {
+              font-size: 16px;
+              color: grey;
+              text-decoration: none;
+            }
+        }
+        }
+      }
+    }
+
+    #about {
+      width: 100%;
+      height: 500px;
+      background-color: dodgerBlue;
+    }
+
+    #projects {
+      width: 100%;
+      height: 500px;
+      background-color: lightGreen;
+    }
+
+    #contact {
+      width: 100%;
+      height: 500px;
+      background-color: pink;
+    }
+
+
+    footer {
+      .link-icons {
+        width: 250px;
+        margin: 0 auto;
+
+        ul {
+          list-style-type: none;
+
+          li {
+            display: inline-block;
+            padding: 5px;
+
+            .fa-linkedin-in, .fa-github, .fa-instagram {
+              color: black;
+            }
+
+            .fa-circle {
+              color: white;
+            }
+          }
+        }
+      }
+      p {
+        color: white;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+  // Media queries
+
+  @media only screen
+  and (max-width: 1189px) {
+    .main-container {
+      width: 90%;
+    }
+  }
+  @media only screen and (max-width: 515px) {
+
+}
+}

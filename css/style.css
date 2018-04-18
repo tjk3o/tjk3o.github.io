@@ -1,0 +1,102 @@
+body {
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  background-attachment: fixed;
+  background-position: center;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Roboto, helvetica, sans-serif;
+  color: white; }
+  body .main-container {
+    width: 1190px;
+    margin: 0 auto; }
+    body .main-container .profile-hero {
+      height: 500;
+      width: 300px;
+      margin: 0 auto;
+      text-align: center; }
+      body .main-container .profile-hero .profile-card {
+        padding-top: 120px; }
+        body .main-container .profile-hero .profile-card .profile_pic {
+          width: 150px;
+          height: 150px;
+          margin: 0 auto;
+          border-radius: 50%;
+          box-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+          -moz-box-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+          -webkit-box-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+          -o-box-shadow: 1px 1px rgba(0, 0, 0, 0.6); }
+        body .main-container .profile-hero .profile-card h1 {
+          font-size: 40px; }
+        body .main-container .profile-hero .profile-card h2 {
+          color: grey;
+          font-size: 20px;
+          margin-bottom: 120px; }
+    body .main-container .mystyle {
+      height: 50px;
+      width: 100%;
+      -webkit-transition: height 0.5s;
+      /* Safari */
+      transition: height 0.5s;
+      line-height: 50px; }
+    body .main-container nav {
+      top: 0;
+      position: -webkit-sticky;
+      position: sticky;
+      width: 100%;
+      height: 80px;
+      -webkit-transition: height 0.5s;
+      /* Safari */
+      transition: height 0.5s;
+      margin: 0 auto;
+      background-color: #f7f7f7f2;
+      box-shadow: 0 2px #adadadcf;
+      line-height: 80px; }
+      body .main-container nav .navbar-items {
+        height: 80px;
+        width: 100%; }
+        body .main-container nav .navbar-items ul {
+          width: 470px;
+          margin: 0 auto;
+          -webkit-padding-start: 0; }
+          body .main-container nav .navbar-items ul li {
+            display: inline-block;
+            padding-left: 50px;
+            padding-right: 50px; }
+            body .main-container nav .navbar-items ul li a {
+              font-size: 16px;
+              color: grey;
+              text-decoration: none; }
+    body .main-container #about {
+      width: 100%;
+      height: 500px;
+      background-color: dodgerBlue; }
+    body .main-container #projects {
+      width: 100%;
+      height: 500px;
+      background-color: lightGreen; }
+    body .main-container #contact {
+      width: 100%;
+      height: 500px;
+      background-color: pink; }
+    body .main-container footer .link-icons {
+      width: 250px;
+      margin: 0 auto; }
+      body .main-container footer .link-icons ul {
+        list-style-type: none; }
+        body .main-container footer .link-icons ul li {
+          display: inline-block;
+          padding: 5px; }
+          body .main-container footer .link-icons ul li .fa-linkedin-in, body .main-container footer .link-icons ul li .fa-github, body .main-container footer .link-icons ul li .fa-instagram {
+            color: black; }
+          body .main-container footer .link-icons ul li .fa-circle {
+            color: white; }
+    body .main-container footer p {
+      color: white;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+  @media only screen and (max-width: 1189px) {
+    body .main-container {
+      width: 90%; } }
+
+/*# sourceMappingURL=style.css.map */
