@@ -68,14 +68,14 @@ body {
         width: 100%;
 
         ul {
-          width: 470px;
+          width: 300px;
           margin: 0 auto;
           -webkit-padding-start: 0;
 
           li {
             display: inline-block;
-            padding-left: 50px;
-            padding-right: 50px;
+            padding-left: 22px;
+            padding-right: 22px;
 
             a {
               font-size: 16px;
@@ -95,8 +95,37 @@ body {
 
     #projects {
       width: 100%;
-      height: 500px;
+      height: 100%;
       background-color: lightGreen;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .project-blurb-container {
+        width: 30%;
+        min-width: 250px;
+        height: 200px;
+        background-color: orange;
+
+        .project-blurb {
+          padding-left: 50px;
+        }
+      }
+      .project-demo-container {
+        width: 70%;
+        min-width: 300px;
+        height: 600px;
+        background-color: brown;
+
+        .project-demo {
+          background-image: url("../images/browser.png");
+          width: 100%;
+          height: 100%;
+          display: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
     }
 
     #contact {
@@ -145,7 +174,4 @@ body {
       width: 90%;
     }
   }
-  @media only screen and (max-width: 515px) {
-
-}
 }
