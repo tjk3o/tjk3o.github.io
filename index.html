@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
     <script src="app.js" charset="utf-8"></script>
 
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -14,6 +17,7 @@
   </head>
   <body>
     <main class="main-container">
+
       <section class="profile-hero">
         <div class="profile-card">
           <img src="images/profile_pic.png" alt="profile picture" class="profile_pic">
@@ -42,17 +46,24 @@
 
       </article>
 
+      <div class="projects-selector-container">
+        <div class="projects-selector-menu">
+          <button class="project-show-button" value="0">Project 1</button>
+          <button class="project-show-button" value="1">Project 2</button>
+          <button class="project-show-button" value="2">Project 3</button>
+          <button class="project-show-button" value="3">Project 4</button>
+        </div>
+      </div>
+
       <article id="projects">
-        <!-- <div class="project-blurb-container">
+        <div class="project-blurb-container">
           <div class="project-blurb">
-            <h1>Maze Explorer</h1>
+            <!-- <h1>Maze Explorer</h1> -->
           </div>
         </div>
         <div class="project-demo-container">
-          <div class="project-demo">
-
-          </div>
-        </div> -->
+          <!-- <video src="videos/maze-explorer.mov" autoplay loop poster=""></video> -->
+        </div>
       </article>
 
       <article id="contact">
@@ -93,5 +104,6 @@
       </footer>
 
     </main>
+
   </body>
 </html>
