@@ -38,9 +38,18 @@ $(() => {
       .append( `<h1 class="">${projectTitles[e.target.value]}</h1>` )
       .append( `<p class="">${projectBlurbs[e.target.value]}</p>` );
     demoContainer
-      .append( `<img src="images/${projectDemos[e.target.value]}" />` );
+      .append( `<img src="images/${projectDemos[e.target.value]}" alt="website demo" class="demo-image" />` );
   }
 
   projectShowBtn.on('click', (e) => selectProject(e));
+
+  /*
+  $projects = $('article.project');
+  $('.projects-selector-menu a').on('click', (e) => {
+    const selector = $(e.target).attr('href');
+    $projects.addClass('hidden');
+    $(selector).removeClass('hidden');
+  })
+  */
 
 });

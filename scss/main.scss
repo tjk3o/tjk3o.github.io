@@ -1,3 +1,7 @@
+@mixin for-desktop-up {
+@media (max-width: 1111px) { @content; }
+}
+
 body {
   background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
   background-attachment: fixed;
@@ -26,10 +30,6 @@ body {
           height: 150px;
           margin: 0 auto;
           border-radius: 50%;
-          box-shadow: 1px 1px  rgba(0,0,0,0.6);
-        	-moz-box-shadow: 1px 1px  rgba(0,0,0,0.6);
-        	-webkit-box-shadow: 1px 1px  rgba(0,0,0,0.6);
-        	-o-box-shadow: 1px 1px  rgba(0,0,0,0.6);
         }
 
         h1 {
@@ -90,7 +90,7 @@ body {
     #about {
       width: 100%;
       height: 500px;
-      background-color: dodgerBlue;
+      background-color: #5ee7df;
     }
 
     .projects-selector-container {
@@ -108,6 +108,16 @@ body {
           height: 40px;
           background-color: white;
           border: none;
+          outline: none;
+
+          &:focus {
+            font-size: 13px;
+            color: black;
+          }
+
+          &:hover {
+            color: red;
+          }
         }
       }
     }
@@ -140,6 +150,10 @@ body {
           width: 100%;
           margin: 0 auto;
           vertical-align: middle;
+
+          @include for-desktop-up {
+            margin-bottom: 100px;
+          }
         }
       }
     }
@@ -147,7 +161,7 @@ body {
     #contact {
       width: 100%;
       height: 500px;
-      background-color: pink;
+      background-color: #b490ca;
     }
 
 
@@ -164,7 +178,7 @@ body {
             padding: 5px;
 
             .fa-linkedin-in, .fa-github, .fa-instagram {
-              color: black;
+              color: #b490ca;
             }
 
             .fa-circle {
@@ -183,26 +197,17 @@ body {
   }
 
   // Media queries
-  @media only screen
-  and (max-width: 599) {
-    video {
-      height: 300px;
-    }
-  }
-  @media only screen
-  and (max-width: 899) {
-    video {
-      height: 200px;
-    }
-  }
+
   @media only screen
   and (max-width: 1199px) {
     .main-container {
       width: 90%;
     }
-    video {
-      height: 300px;
-    }
   }
-
+  @media only screen
+  and (max-width: 1111) {
+    img.demo-image {
+          padding-bottom: 200px;
+        }
+  }
 }
