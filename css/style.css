@@ -50,7 +50,6 @@ body {
       transition: height 0.5s;
       margin: 0 auto;
       background-color: #f7f7f7f2;
-      box-shadow: 0 2px #adadadcf;
       line-height: 80px; }
       body .main-container nav .navbar-items {
         height: 80px;
@@ -72,33 +71,38 @@ body {
       height: 500px;
       background-color: dodgerBlue; }
     body .main-container .projects-selector-container {
-      background-color: lightGreen;
-      width: 100%; }
+      background-color: #fff;
+      width: 100%;
+      color: black; }
       body .main-container .projects-selector-container .projects-selector-menu {
         width: 300px;
+        height: 100px;
+        line-height: 6em;
         margin: 0 auto; }
         body .main-container .projects-selector-container .projects-selector-menu .project-show-button {
           margin: 0;
           width: 70px;
           height: 40px;
           background-color: white;
-          color: red; }
+          border: none; }
     body .main-container #projects {
       width: 100%;
-      background-color: lightGreen;
+      background-color: #fff;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center; }
+      justify-content: center;
+      color: black; }
       body .main-container #projects .project-blurb-container {
         width: 30%;
         height: 100%;
         min-width: 300px; }
         body .main-container #projects .project-blurb-container .project-blurb {
-          padding-left: 50px; }
+          padding-left: 50px;
+          padding-right: 10px; }
       body .main-container #projects .project-demo-container {
         width: 70%;
         height: 100%; }
-        body .main-container #projects .project-demo-container video {
+        body .main-container #projects .project-demo-container img {
           width: 100%;
           margin: 0 auto;
           vertical-align: middle; }

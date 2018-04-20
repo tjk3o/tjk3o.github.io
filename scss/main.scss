@@ -61,7 +61,6 @@ body {
       transition: height 0.5s;
       margin: 0 auto;
       background-color: #f7f7f7f2;
-      box-shadow: 0 2px #adadadcf;
       line-height: 80px;
 
       .navbar-items {
@@ -95,28 +94,31 @@ body {
     }
 
     .projects-selector-container {
-      background-color: lightGreen;
+      background-color: #fff;
       width: 100%;
+      color: black;
       .projects-selector-menu {
         width: 300px;
+        height: 100px;
+        line-height: 6em;
         margin: 0 auto;
         .project-show-button {
           margin: 0;
           width: 70px;
           height: 40px;
           background-color: white;
-          color: red;
+          border: none;
         }
       }
     }
 
-
     #projects {
       width: 100%;
-      background-color: lightGreen;
+      background-color: #fff;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      color: black;
 
       .project-blurb-container {
         width: 30%;
@@ -125,6 +127,8 @@ body {
 
         .project-blurb {
           padding-left: 50px;
+          padding-right: 10px;
+
         }
       }
 
@@ -132,7 +136,7 @@ body {
         width: 70%;
         height: 100%;
 
-        video {
+        img {
           width: 100%;
           margin: 0 auto;
           vertical-align: middle;
