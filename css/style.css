@@ -130,6 +130,9 @@ body {
         height: 100px;
         line-height: 6em;
         margin: 0 auto; }
+        @media (max-width: 600px) {
+          body .main-container .projects-selector-container .projects-selector-menu {
+            width: 250px; } }
         body .main-container .projects-selector-container .projects-selector-menu .project-show-button {
           margin: 0;
           width: 70px;
@@ -137,6 +140,12 @@ body {
           background-color: white;
           border: none;
           outline: none; }
+          @media (max-width: 600px) {
+            body .main-container .projects-selector-container .projects-selector-menu .project-show-button {
+              font-size: 10px;
+              width: 58px;
+              padding-left: 0;
+              padding-right: 0; } }
           body .main-container .projects-selector-container .projects-selector-menu .project-show-button:focus {
             font-size: 13px;
             color: #5ee7df; }
@@ -155,9 +164,6 @@ body {
         width: 30%;
         height: 100%;
         min-width: 300px; }
-        @media (max-width: 600px) {
-          body .main-container #projects .project-blurb-container {
-            width: 30%; } }
         @media (max-width: 900px) {
           body .main-container #projects .project-blurb-container {
             width: 70%; } }
@@ -166,6 +172,8 @@ body {
           padding-right: 50px; }
           @media (max-width: 600px) {
             body .main-container #projects .project-blurb-container .project-blurb {
+              width: 80%;
+              margin: 0 auto;
               padding: 0;
               padding-top: 40px;
               padding-bottom: 40px; } }

@@ -1,5 +1,6 @@
 $(() => {
   console.log('jQuery loaded!');
+
   const projectShowBtn = $('.project-show-button');
 
   // Shrinking Navbar beyond scroll of 525px
