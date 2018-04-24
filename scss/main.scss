@@ -21,7 +21,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   font-family: Roboto, helvetica, sans-serif;
-  color: grey;
+  color: #525252;
   scroll-behavior: smooth;
   font-weight: 100;
 
@@ -48,11 +48,11 @@ body {
         h1 {
           font-size: 40px;
           font-weight: 100;
-
+          color: #525252;
         }
 
         h2 {
-          color: grey;
+          color: #525252;
           font-size: 20px;
           margin-bottom: 120px;
           font-weight: 100;
@@ -95,7 +95,7 @@ body {
 
             a {
               font-size: 16px;
-              color: grey;
+              color: #525252;
               text-decoration: none;
             }
         }
@@ -293,6 +293,8 @@ body {
       p {
         width: 70%;
         margin: 0 auto;
+        text-align: center;
+        line-height: 3em;
       }
     }
 

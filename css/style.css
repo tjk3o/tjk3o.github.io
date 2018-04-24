@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   font-family: Roboto, helvetica, sans-serif;
-  color: grey;
+  color: #525252;
   scroll-behavior: smooth;
   font-weight: 100; }
   body .main-container {
@@ -25,9 +25,10 @@ body {
           border-radius: 50%; }
         body .main-container .profile-hero .profile-card h1 {
           font-size: 40px;
-          font-weight: 100; }
+          font-weight: 100;
+          color: #525252; }
         body .main-container .profile-hero .profile-card h2 {
-          color: grey;
+          color: #525252;
           font-size: 20px;
           margin-bottom: 120px;
           font-weight: 100; }
@@ -63,7 +64,7 @@ body {
             padding-right: 22px; }
             body .main-container nav .navbar-items ul li a {
               font-size: 16px;
-              color: grey;
+              color: #525252;
               text-decoration: none; }
     body .main-container #about {
       width: 100%;
@@ -201,7 +202,9 @@ body {
         color: #5ee7df; }
       body .main-container #contact p {
         width: 70%;
-        margin: 0 auto; }
+        margin: 0 auto;
+        text-align: center;
+        line-height: 3em; }
     body .main-container footer .link-icons {
       width: 250px;
       margin: 0 auto; }
