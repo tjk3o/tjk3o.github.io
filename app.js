@@ -1,5 +1,9 @@
 $(() => {
   console.log('jQuery loaded!');
+  // Tells the browser to reset the scrollTop position to 0
+  $(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+  });
 
   const projectShowBtn = $('.project-show-button');
 
