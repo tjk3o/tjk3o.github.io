@@ -64,8 +64,18 @@ body {
               text-decoration: none; }
     body .main-container #about {
       width: 100%;
-      height: 500px;
-      background-color: #5ee7df; }
+      height: auto;
+      background-color: #fff;
+      border-bottom: 4px solid #fafafa; }
+      body .main-container #about p {
+        color: #808080;
+        width: 70%;
+        margin: 0 auto;
+        line-height: 1.5em;
+        padding: 35px 0; }
+    body .main-container hr {
+      background-color: #fff;
+      color: #000; }
     body .main-container .projects-selector-container {
       background-color: #fff;
       width: 100%;
@@ -84,16 +94,18 @@ body {
           outline: none; }
           body .main-container .projects-selector-container .projects-selector-menu .project-show-button:focus {
             font-size: 13px;
-            color: black; }
+            color: #5ee7df; }
           body .main-container .projects-selector-container .projects-selector-menu .project-show-button:hover {
-            color: red; }
+            color: #5ee7df; }
     body .main-container #projects {
       width: 100%;
       background-color: #fff;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      color: black; }
+      color: black;
+      padding-bottom: 60px;
+      border-bottom: 4px solid #fafafa; }
       body .main-container #projects .project-blurb-container {
         width: 30%;
         height: 100%;
@@ -108,13 +120,10 @@ body {
           width: 100%;
           margin: 0 auto;
           vertical-align: middle; }
-          @media (max-width: 1111px) {
-            body .main-container #projects .project-demo-container img {
-              margin-bottom: 100px; } }
     body .main-container #contact {
       width: 100%;
       height: 500px;
-      background-color: #b490ca; }
+      background-color: #fff; }
     body .main-container footer .link-icons {
       width: 250px;
       margin: 0 auto; }
@@ -124,7 +133,7 @@ body {
           display: inline-block;
           padding: 5px; }
           body .main-container footer .link-icons ul li .fa-linkedin-in, body .main-container footer .link-icons ul li .fa-github, body .main-container footer .link-icons ul li .fa-instagram {
-            color: #b490ca; }
+            color: #5ee7df; }
           body .main-container footer .link-icons ul li .fa-circle {
             color: white; }
     body .main-container footer p {
@@ -135,8 +144,5 @@ body {
   @media only screen and (max-width: 1199px) {
     body .main-container {
       width: 90%; } }
-  @media only screen and (max-width: 1111) {
-    body img.demo-image {
-      padding-bottom: 200px; } }
 
 /*# sourceMappingURL=style.css.map */
