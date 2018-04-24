@@ -1,5 +1,17 @@
-@mixin for-desktop-up {
-@media (max-width: 1111px) { @content; }
+@mixin for-large-desktop {
+@media (max-width: 1800px) { @content; }
+}
+
+@mixin for-desktop {
+@media (max-width: 1200px) { @content; }
+}
+
+@mixin for-tablet {
+@media (max-width: 900px) { @content; }
+}
+
+@mixin for-mobile {
+@media (max-width: 600px) { @content; }
 }
 
 body {
@@ -95,6 +107,7 @@ body {
       width: 100%;
       height: auto;
       background-color: #fff;
+      padding-bottom: 80px;
       border-bottom: 4px solid #fafafa;
 
       .personal-bio {
@@ -102,6 +115,11 @@ body {
         height: auto;
         margin: 0 auto;
         padding: 100px;
+        @include for-mobile {
+          padding: 0;
+          padding-top: 80px;
+          padding-bottom: 80px;
+        }
 
         p {
           color: #808080;
@@ -114,10 +132,41 @@ body {
         text-align: center;
       }
 
-      .technology-icon-list, .employment-icon-list {
+      .technology-icon-list {
         list-style: none;
-        width: 300px;
         margin: 0 auto;
+        padding: 0;
+        @include for-large-desktop {
+          width: 516px;
+        }
+        @include for-desktop {
+          width: 344px;
+        }
+        @include for-tablet {
+          width: 344px;
+        }
+        @include for-mobile {
+          width: 258px;
+        }
+
+
+
+        li {
+          display: inline-block;
+          font-size: 40px;
+          padding: 20px;
+
+          img {
+            width: 40px;
+          }
+        }
+      }
+
+      .employment-icon-list {
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        width: 267px;
 
         li {
           display: inline-block;
@@ -171,7 +220,8 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding-bottom: 60px;
+      padding-top: 80px;
+      padding-bottom: 80px;
       border-bottom: 4px solid #fafafa;
 
       .project-blurb-container {
@@ -179,9 +229,29 @@ body {
         height: 100%;
         min-width: 300px;
 
+        @include for-mobile {
+          width: 30%;
+        }
+
+        @include for-tablet {
+          width: 70%;
+        }
+
         .project-blurb {
           padding-left: 50px;
           padding-right: 50px;
+
+          @include for-mobile {
+            padding: 0;
+            padding-top: 40px;
+            padding-bottom: 40px;
+          }
+
+          @include for-tablet {
+            padding: 0;
+            padding-top: 80px;
+            padding-bottom: 80px;
+          }
 
           h1 {
             font-weight: 100;
@@ -199,9 +269,6 @@ body {
           margin: 0 auto;
           vertical-align: middle;
 
-          @include for-desktop-up {
-            // margin-bottom: 100px;
-          }
         }
       }
     }
