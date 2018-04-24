@@ -5,8 +5,9 @@ body {
   box-sizing: border-box;
   margin: 0;
   font-family: Roboto, helvetica, sans-serif;
-  color: white;
-  scroll-behavior: smooth; }
+  color: grey;
+  scroll-behavior: smooth;
+  font-weight: 100; }
   body .main-container {
     width: 1190px;
     margin: 0 auto; }
@@ -23,11 +24,13 @@ body {
           margin: 0 auto;
           border-radius: 50%; }
         body .main-container .profile-hero .profile-card h1 {
-          font-size: 40px; }
+          font-size: 40px;
+          font-weight: 100; }
         body .main-container .profile-hero .profile-card h2 {
           color: grey;
           font-size: 20px;
-          margin-bottom: 120px; }
+          margin-bottom: 120px;
+          font-weight: 100; }
     body .main-container .shrunken-nav {
       height: 50px;
       width: 100%;
@@ -67,19 +70,32 @@ body {
       height: auto;
       background-color: #fff;
       border-bottom: 4px solid #fafafa; }
-      body .main-container #about p {
-        color: #808080;
+      body .main-container #about .personal-bio {
         width: 70%;
+        height: auto;
         margin: 0 auto;
-        line-height: 1.5em;
-        padding: 35px 0; }
+        padding: 100px; }
+        body .main-container #about .personal-bio p {
+          color: #808080;
+          line-height: 1.8em; }
+      body .main-container #about h1 {
+        text-align: center; }
+      body .main-container #about .technology-icon-list, body .main-container #about .employment-icon-list {
+        list-style: none;
+        width: 300px;
+        margin: 0 auto; }
+        body .main-container #about .technology-icon-list li, body .main-container #about .employment-icon-list li {
+          display: inline-block;
+          font-size: 40px;
+          padding: 20px; }
+          body .main-container #about .technology-icon-list li img, body .main-container #about .employment-icon-list li img {
+            width: 40px; }
     body .main-container hr {
       background-color: #fff;
       color: #000; }
     body .main-container .projects-selector-container {
       background-color: #fff;
-      width: 100%;
-      color: black; }
+      width: 100%; }
       body .main-container .projects-selector-container .projects-selector-menu {
         width: 300px;
         height: 100px;
@@ -103,7 +119,6 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      color: black;
       padding-bottom: 60px;
       border-bottom: 4px solid #fafafa; }
       body .main-container #projects .project-blurb-container {
@@ -112,7 +127,9 @@ body {
         min-width: 300px; }
         body .main-container #projects .project-blurb-container .project-blurb {
           padding-left: 50px;
-          padding-right: 10px; }
+          padding-right: 50px; }
+          body .main-container #projects .project-blurb-container .project-blurb h1 {
+            font-weight: 100; }
       body .main-container #projects .project-demo-container {
         width: 70%;
         height: 100%; }

@@ -14,7 +14,7 @@ $(() => {
     const target = this.hash;
     const $target = $(target);
     $('html, body').stop().animate({
-      'scrollTop': ($target.offset().top) - 80
+      'scrollTop': $target.offset().top
     }, 900, 'swing', function () {
       window.location.hash = target;
     });
