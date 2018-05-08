@@ -138,26 +138,50 @@ body {
         padding: 0;
         @include for-large-desktop {
           width: 516px;
+          li {
+            display: inline-block;
+            font-size: 60px;
+            padding: 10px;
+
+            img {
+              width: 40px;
+            }
+          }
         }
         @include for-desktop {
-          width: 344px;
+          width: 520px;
+          li {
+            display: inline-block;
+            font-size: 60px;
+            padding: 11px;
+
+            img {
+              width: 40px;
+            }
+          }
         }
         @include for-tablet {
           width: 344px;
+          li {
+            display: inline-block;
+            font-size: 60px;
+            padding: 11px;
+
+            img {
+              width: 40px;
+            }
+          }
         }
         @include for-mobile {
           width: 258px;
-        }
+          li {
+            display: inline-block;
+            font-size: 40px;
+            padding: 10px;
 
-
-
-        li {
-          display: inline-block;
-          font-size: 40px;
-          padding: 20px;
-
-          img {
-            width: 40px;
+            img {
+              width: 40px;
+            }
           }
         }
       }
@@ -170,11 +194,10 @@ body {
 
         li {
           display: inline-block;
-          font-size: 40px;
-          padding: 20px;
+          padding: 10px;
 
           img {
-            width: 40px;
+            width: 60px;
           }
         }
       }
@@ -245,6 +268,12 @@ body {
         .project-blurb {
           padding-left: 50px;
           padding-right: 50px;
+          .project-blurb-link {
+            color: #525252;
+            font-size: 20px;
+            padding-right: 5px;
+            font-weight: 100;
+          }
 
           @include for-mobile {
             width: 80%;
