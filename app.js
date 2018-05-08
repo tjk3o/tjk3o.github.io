@@ -1,11 +1,11 @@
 $(() => {
   console.log('jQuery loaded!');
-  // Tells the browser to reset the scrollTop position to 0
-  $(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
-  });
-
   const projectShowBtn = $('.project-show-button');
+
+  // Sets scrollTop back to zero just after the page reloads. Fixes bug where page reloaded in incorrect position.
+  window.setTimeout(function() {
+    $(window).scrollTop(0);
+  }, 100);
 
   // Shrinking Navbar beyond scroll of 525px
   $(window).scroll(() => {
@@ -47,14 +47,4 @@ $(() => {
   }
 
   projectShowBtn.on('click', (e) => selectProject(e));
-
-  /*
-  $projects = $('article.project');
-  $('.projects-selector-menu a').on('click', (e) => {
-    const selector = $(e.target).attr('href');
-    $projects.addClass('hidden');
-    $(selector).removeClass('hidden');
-  })
-  */
-
 });
