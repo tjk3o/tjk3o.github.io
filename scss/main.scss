@@ -1,3 +1,7 @@
+@mixin for-largest-desktop {
+@media (min-width: 1801px) { @content; }
+}
+
 @mixin for-large-desktop {
 @media (max-width: 1800px) { @content; }
 }
@@ -136,6 +140,18 @@ body {
         list-style: none;
         margin: 0 auto;
         padding: 0;
+        @include for-largest-desktop {
+          width: 750px;
+          li {
+            display: inline-block;
+            font-size: 80px;
+            padding: 20px;
+
+            img {
+              width: 40px;
+            }
+          }
+        }
         @include for-large-desktop {
           width: 516px;
           li {
@@ -198,6 +214,17 @@ body {
 
           img {
             width: 60px;
+          }
+        }
+        @include for-largest-desktop {
+          width: 400px;
+
+          li {
+            padding: 25px;
+
+            img {
+              width: 80px;
+            }
           }
         }
       }
